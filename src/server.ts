@@ -9,6 +9,7 @@ const app:Application=express();
 app.use(express.json());
 
 app.use("/api/auth",authRoute);
+// app.use((err:Error,req:Request,res,next)=>{});
 
 sequelize.sync({force:false}).then(function () {
   //  UserModel.initModel(sequelize)

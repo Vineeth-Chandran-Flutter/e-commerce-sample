@@ -34,7 +34,7 @@ export class OrderModel extends Model<OrderAttributes>implements OrderAttributes
             type:DataTypes.DATE,
         },
         paymentType:{
-            type:DataTypes.INTEGER
+            type:DataTypes.ENUM
         }
 
     },{sequelize,modelName:"Order"});
