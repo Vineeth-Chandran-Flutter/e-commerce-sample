@@ -7,6 +7,7 @@ interface OrderAttributes{
     totalAmount:number;
     orderDate:Date;
     paymentType:number;
+    
 
 }
 

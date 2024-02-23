@@ -12,6 +12,5 @@ userRoute.get("/getOrders",userController.getOrders);
 userRoute.get("/getCart",userController.getCart);
 userRoute.delete("/removeFromCart",userController.removeFromCart);
 userRoute.delete("/deleteAddress",userController.deleteAddress);
-userRoute.post("/");
 
 export default userRoute;
