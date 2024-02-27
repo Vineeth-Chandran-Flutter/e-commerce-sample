@@ -1,16 +1,6 @@
 import { Request, Response } from "express";
 
 export const userController = {
-    //     userRoute.get("/allProducts");
-    // userRoute.get("/searchProduct");
-    // userRoute.post("/addToCart");
-    // userRoute.post("/addAddress");
-    // userRoute.get("/checkout");
-    // userRoute.get("/getOrders");
-    // userRoute.get("/getCart");
-    // userRoute.delete("/removeFromCart");
-    // userRoute.delete("/deleteAddress");
-    // userRoute.post("/");
 
     allProducts: (req: Request, res: Response) => {
 
