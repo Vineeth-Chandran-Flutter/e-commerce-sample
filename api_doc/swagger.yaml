@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: e-commerce server
+  version: 1.0.0
+  description: Sample e commerce project with node.js, express, typescript, MySql with sequelize
+  contact:
+    name: Vineeth
+    email: vinee.kcl@gmail.com
+servers:
+  - url: http://localhost:3000
+    description: local server
+paths:
+#sign up both seller and customer
+  /api/auth/signUp:
+    post:
+      summary: signup 
+      description: both seller and user can signup using this same api 
+      tags:
+        - user
+        - seller
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+                - email 
+                - phone 
+                - password
+                - isSeller
+              properties:
+                name:
+                  type: string
+                  description: full name
+                  example: Vineeth Chandran
+      
+
