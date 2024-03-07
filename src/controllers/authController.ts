@@ -27,6 +27,9 @@ const authController={
     forgotPassword:(req:Request,res:Response)=>{
         res.status(200).json({message:"an otp send to your mail"})
     },
+    setNewPassword:(req:Request,res:Response)=>{
+        const newPassword:string=req.body.newPassword;
+    },
     logout:(req:Request,res:Response)=>{}
 }
 export default authController;
